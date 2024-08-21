@@ -21,6 +21,9 @@ class service:
 
         if configFile != None:
             self.loadConfig(configFile)
+
+    def getName(self):
+        pass
         
 
     def loadConfig(self):
@@ -90,6 +93,12 @@ class filebrowser(service):
     def generateCommand(self):
         self.command = self.path + ' -p ' + self.port + ' -a ' + self.ip
 
+    def getName(self):
+        return 'filebrowser'
+
 class alist(service):
     def generateCommand(self):
         self.command = self.path + ' server'
+
+    def getName(self):
+        return 'Alist'
