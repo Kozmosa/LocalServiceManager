@@ -46,9 +46,6 @@ def boot(command, bootloader):
             print(outinfo.decode('utf-8'))
             print(errinfo.decode('utf-8'))
 
-def generateCommand
-
-
 
 # main program
 def main():
